@@ -1,0 +1,183 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body    {
+    /*background: burlywood;*/
+    background: url("pre.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container  {
+    height: 35rem;
+    width: 40rem;
+    padding: 15px;
+    background: rgb(28, 96, 197);
+    opacity: 0.9;
+    margin: 5% auto;
+    border-radius: 15px;
+}
+h1  {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: wheat;
+    text-align: center;
+    margin-bottom: 20px;
+    transition-property: all;
+    transition-duration: 2s, 3s;
+    transition-timing-function: ease-in-out;
+}
+.question   {
+    width: 100%;
+    background: rgb(1, 37, 37);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition-property: all;
+    transition-duration: 2s, 5s;
+    transition-timing-function: ease-in;
+
+}
+
+.options    {
+    float: left;
+    width: 100%;
+}
+.options #myOptions   {
+
+list-style: upper-alpha;
+}
+.options #myOptions li  {
+display: inline-block;
+background: white;
+border: 1px solid rgb(69, 9, 126);
+width: 95%;
+border-radius: 5px;
+font-size: 1rem;
+font-weight: bold;
+color: rgb(43, 2, 2);
+cursor: pointer;
+text-align: left;
+padding: 10px;
+margin: 20px;
+}
+
+.options #myOptions li.correct{
+    background: rgb(4, 83, 4);
+    color: white;
+}
+
+.options #myOptions li.wrong{
+    background-color: rgb(240, 3, 3);
+    color: white;
+}
+
+.score  {
+    width: 100%;
+    padding: 15px 0;
+}
+.score  .next   {
+    float: right;
+    width: 30%;
+    line-height: 1.1rem;
+}
+.score  .next button {
+    background: rgb(165, 71, 42);
+    
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px grey;
+}
+.score  .score-card  {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    line-height: 1.5rem;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.score  .score-card #myScores  {
+    background: rgb(68, 158, 180);
+    color: cornsilk;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: larger;
+    }
+    
+#foot   {
+    float: right;
+    margin-right: 5px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gold;
+    font-weight: bold;
+}
+
+      
+    @media screen and (max-width: 760px)    {
+        
+        .container {
+            height: 25rem;
+            width: 85%;
+            padding: 5px;
+            margin: 20px auto;   
+            border-radius: 10px;
+        }
+        h1  {font-size: 1.5rem;}
+        
+        .question   {
+            min-height: 1rem;
+            margin-left: 3px;
+            font-size: 1.2rem;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .options    {
+            
+            width: 100%;
+        }
+        .options #myOptions li  {
+        width: 90%;
+        font-size: 1rem;
+        padding: 5px;
+        margin: 10px;
+        }
+        
+        .score  {
+            width: 100%;
+            padding: 5px;
+        }
+        .score  .next   {
+            float: right;
+            width: 20%;
+            line-height: 2rem;
+        }
+        .score  .next button {
+            font-size: 0.5rem;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .score  .score-card  {
+            float: left;
+            width: 50%;
+            margin-left: 5%;
+            line-height: 2rem;
+        }
+        .score  .score-card #myScores  {
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 1rem;
+            }
+            }

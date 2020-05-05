@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+         
+    <section class="container">
+        <h1>Football Quiz App</h1>
+    <div class="question">
+        In what season did Roman Abramovich take over Chelsea?
+    </div>
+    <div class="options">
+        <ul id="myOptions">
+           <li id="option1" onclick="button(this)">2001/2002</li>
+            <li id="option2" onclick="button(this)">2002/2003</li>
+            <li id="option3" onclick="button(this)">2003/2004</li>
+            <li id="option4" onclick="button(this)">2004/2005</li>
+        </ul>
+    </div>
+    <div class="score">
+        <div class="next">
+            <button type="button" onclick="next()" id="nextButton">Next</button>
+        </div>
+        <div class="score-card">
+            Scores: <span id="myScores">0</span>
+        </div>
+</div>
+
+<br>
+<div id="foot">created by Whayasay</div>
+
+    </section>
+    <script src="script.js"></script>
+        
+</body>
+</html>
